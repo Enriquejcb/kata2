@@ -1,13 +1,19 @@
-package Software.ulpgc.kata2;
+package software.ulpgc.kata2;
 
-public record Student(String name, int note) {
-    @Override
-    public int note() {
+public class Student {
+    private final String name;
+    private final int note;
+
+    public Student(String name, int note) {
+        this.name = name;
+        this.note = note;
+    }
+
+    public int getNote() {
         return note;
     }
 
-    @Override
-    public String name() {
+    public String getName() {
         return name;
     }
 }
