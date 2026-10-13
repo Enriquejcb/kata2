@@ -1,4 +1,4 @@
-package Software.ulpgc.kata2;
+package software.ulpgc.kata2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
