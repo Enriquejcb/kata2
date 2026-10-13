@@ -1,4 +1,4 @@
-package software.ulpgc.kata2;
+package Software.ulpgc.kata2;
 
 import java.io.IOException;
 import java.io.InputStream;

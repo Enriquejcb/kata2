@@ -1,7 +1,5 @@
 package Software.ulpgc.kata2;
 
-import software.ulpgc.kata2.*;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CsvStudentLoader implements StudentLoader {
+public class CsvStudentLoader implements StudentLoader{
     @Override
     public List<Student> load(InputStream is) {
 
@@ -33,3 +31,11 @@ public class CsvStudentLoader implements StudentLoader {
             allStudents.add(newStudent);
         }
         return allStudents;
+
+
+
+
+
+    }
+
+}
