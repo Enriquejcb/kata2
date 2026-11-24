@@ -1,28 +1,28 @@
-# Kata 2: Entrada, salida y carga de datos
+# Kata 2: Input, Output and Data Loading
 
-## Objetivo de la entrega
-El objetivo principal de esta kata es practicar la lectura de datos mediante `InputStream`, su transformación en objetos de dominio, y la escritura de un resumen estadístico utilizando `OutputStream`. Se ha diseñado el programa para separar claramente la lógica de negocio de los orígenes y destinos concretos de los datos, evitando acoplar la lectura y escritura a archivos físicos específicos.
+## Purpose of the Assignment
+The main goal of this kata is to practice reading data through `InputStream`, transforming it into domain objects, and writing a statistical summary using `OutputStream`. The program is designed to clearly separate the business logic from the concrete sources and destinations of the data, avoiding coupling reading and writing to specific physical files.
 
-## Dependencias y Entorno
-* **Lenguaje:** Java
-* **Versión de JDK:** OpenJDK-27 
-* **Gestor de dependencias:** Maven (pom.xml)
-* **Bibliotecas externas:** Ninguna (uso exclusivo de las clases estándar de Java I/O).
+## Dependencies and Environment
+* **Language:** Java
+* **JDK version:** OpenJDK-26
+* **Dependency manager:** Maven (pom.xml)
+* **External libraries:** None (only standard Java I/O classes).
 
-## Estructura de la entrega y Clases principales
-El diseño respeta la separación de responsabilidades
-* `Student`: Entidad de dominio que representa una fila del dataset (nombre y nota).
-* `StudentLoader`: Interfaz que define el contrato de carga recibiendo un genérico `InputStream`.
-* `CsvStudentLoader`: Implementación (adaptador) que procesa texto separado por comas, descartando cabeceras y líneas mal formadas.
-* `ClassMean`: Clase encargada de la transformación y cálculo (nota media de la clase).
-* `Main`: Actúa como ensamblador. Conecta las tuberías de entrada (`FileInputStream`) y salida (`FileOutputStream` / `System.out`), y coordina el flujo de datos sin conocer los detalles del parseo.
+## Project Structure and Main Classes
+The design follows the separation of responsibilities principle.
+* `Student`: Domain entity that represents a row of the dataset (name and grade).
+* `StudentLoader`: Interface that defines the loading contract, receiving a generic `InputStream`.
+* `CsvStudentLoader`: Implementation (adapter) that processes comma-separated text, discarding headers and malformed lines.
+* `ClassMean`: Class responsible for the transformation and calculation (class average grade).
+* `Main`: Acts as the assembler. It connects the input pipes (`FileInputStream`) and output pipes (`FileOutputStream` / `System.out`), and coordinates the data flow without knowing the parsing details.
 
-## Compilación y Ejecución
-Para ejecutar el proyecto:
-1. Clona este repositorio.
-2. Abre una terminal en la raíz del proyecto.
-3. Asegúrate de tener el archivo `InPutKata2.csv` en el directorio principal.
-4. Compila y ejecuta la clase `Main` desde tu IDE (IntelliJ IDEA) o usando Maven.
+## Build and Run
+To run the project:
+1. Clone this repository.
+2. Open a terminal in the project root.
+3. Make sure the file `InPutKata2.csv` is in the main directory.
+4. Compile and run the `Main` class from your IDE (IntelliJ IDEA) or using Maven.
 
-   En este link puedes ver el video explicativo: 
+   You can watch the explanatory video here:
    https://drive.google.com/file/d/1b_mJuGfk45gvBPXrU8BlKqDWB5fabbhW/view?usp=sharing
