@@ -5,6 +5,6 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface StudentLoader {
-    public List<Student> load(InputStream is) throws IOException;
+public interface GameLoader {
+    public List<Game> load(InputStream input) throws IOException;
 }
